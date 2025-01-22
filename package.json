@@ -1,0 +1,51 @@
+{
+  "name": "storiiies-viewer-spin-off",
+  "version": "0.0.1",
+  "description": "A spin off viewer for Storiiies",
+
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "run-p lint:* prettier",
+    "lint:scripts": "eslint --fix \"src/**/*.ts?(x)\"",
+    "lint:styles": "stylelint --fix \"src/**/*.css\"",
+    "lint:typecheck": "tsc --noEmit",
+    "prettier": "prettier -w \"src/**/*.(ts?(x)|css)\""
+  },
+  "dependencies": {
+    "dompurify": "^3.0.5",
+    "manifesto.js": "^4.2.17",
+    "openseadragon": "^4.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/dompurify": "^3.0.2",
+    "@types/node-fetch": "^2.6.4",
+    "@types/openseadragon": "^3.0.8",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.44.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "globals": "^15.14.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.10.1",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-prettier": "^4.0.0",
+    "typescript": "^5.1.6",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^4.4.3"
+  }
+}
